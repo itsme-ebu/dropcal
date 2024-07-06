@@ -84,7 +84,7 @@ export default function Home() {
 
         <div
           className={`col-span-1 border border-slate-600 w-full min-h-80 p-5 ${
-            calculated ? "flex justify-center items-center" : ""
+            calculated && "flex justify-center items-center"
           }`}
         >
           {!calculated ? (
@@ -93,7 +93,7 @@ export default function Home() {
             <div className="text-slate-400 flex flex-col gap-5 uppercase w-full h-full relative">
               <p>Cost Per Result : {calResult.costPerResult}</p>
               <p>Total RTO Cost : {calResult.totalRtoCost}</p>
-              <p>Total AD's Cost : {calResult.totalAdsCost}</p>
+              <p>Total ADs Cost : {calResult.totalAdsCost}</p>
               <p>Product Cost : {calResult.totalProductCost}</p>
               <p>Net Profit Margin : {calResult.netProfitMargin}</p>
               <div className="absolute bottom-0 left-0">
