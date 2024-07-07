@@ -43,7 +43,7 @@ export default function Home() {
           <input
             type="number"
             placeholder="ADVERTISING SPENT"
-            className="input input-bordered w-[40%] border-zinc-600 bg-transparent max-w-xs"
+            className="input input-bordered md:w-[40%] bg-transparent border-zinc-600 w-full max-w-xs"
             onChange={(e) => setAdSpent(parseFloat(e.target.value))}
           />
 
